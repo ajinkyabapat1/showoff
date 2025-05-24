@@ -1,0 +1,66 @@
+/* src/pages/Skills.css */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.skill-category h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 1.4em;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-item {
+    background-color: var(--border-color); /* Lighter background for tags */
+    color: var(--text-color);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    transition: background-color var(--transition-speed), transform 0.2s ease-out;
+    display: flex; /* For icon alignment */
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+}
+
+.dark-mode .skill-item {
+    background-color: var(--primary-color-dark); /* Different background in dark mode */
+    color: var(--background-color-dark);
+}
+
+.skill-item:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.dark-mode .skill-item:hover {
+    background-color: var(--hover-color-dark);
+}
+
+/* Style for potential icons within skill-item */
+.skill-item i {
+    font-size: 1em; /* Adjust icon size */
+    color: inherit; /* Inherit color from parent */
+}
+
+.experience-summary {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.1em;
+    color: var(--secondary-color);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}

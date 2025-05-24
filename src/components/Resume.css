@@ -1,0 +1,55 @@
+/* src/pages/Resume.css */
+.resume-card {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.resume-card p {
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+.download-resume-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.resume-note {
+    font-size: 0.9em;
+    color: var(--secondary-color);
+    font-style: italic;
+}
+
+.key-highlights-card {
+    margin-top: 40px;
+}
+
+.key-highlights-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+.key-highlights-card ul {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+}
+
+.key-highlights-card ul li {
+    margin-bottom: 15px;
+    padding-left: 25px; /* Space for custom bullet */
+    position: relative;
+    font-size: 1em;
+    color: var(--text-color);
+}
+
+.key-highlights-card ul li::before {
+    content: '•'; /* Custom bullet point */
+    color: var(--primary-color);
+    font-size: 1.5em;
+    position: absolute;
+    left: 0;
+    top: -5px;
+    line-height: 1;
+}

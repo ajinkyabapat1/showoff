@@ -1,0 +1,23 @@
+/* src/pages/Awards.css */
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.award-card h3 {
+    color: var(--primary-color);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.award-meta {
+    font-size: 0.9em;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.award-card p {
+    font-size: 1em;
+}

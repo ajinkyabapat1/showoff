@@ -1,0 +1,93 @@
+/* src/pages/Portfolio.css */
+.portfolio-intro {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 1.1em;
+    color: var(--secondary-color);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pushes link to bottom */
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    color: var(--primary-color);
+    font-size: 1.6em;
+    margin: 0; /* Reset margin for flex item */
+    line-height: 1.2;
+}
+
+.project-timeframe {
+    font-size: 0.9em;
+    color: var(--secondary-color);
+    white-space: nowrap; /* Prevent wrapping */
+    padding: 5px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    background-color: var(--background-color);
+}
+
+.project-card p {
+    flex-grow: 1; /* Allows description to take up available space */
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.project-tech {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tech-tag {
+    background-color: var(--border-color);
+    color: var(--text-color);
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 0.85em;
+}
+
+.dark-mode .tech-tag {
+    background-color: var(--primary-color-dark);
+    color: var(--background-color-dark);
+}
+
+.project-link {
+    display: inline-flex; /* To align arrow */
+    align-items: center;
+    margin-top: 20px;
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: color var(--transition-speed);
+}
+
+.project-link:hover {
+    color: var(--hover-color);
+}
+
+.project-link .arrow {
+    margin-left: 8px;
+    transition: transform 0.2s ease-out;
+}
+
+.project-link:hover .arrow {
+    transform: translateX(5px);
+}
