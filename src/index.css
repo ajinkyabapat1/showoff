@@ -1,27 +1,27 @@
-@import "tailwindcss";
-
 /* src/index.css */
 /* Base Styles */
 :root {
-    /* Light Theme Colors */
-    --background-color-light: #f4f7f6;
-    --text-color-light: #333;
-    --primary-color-light: #007bff; /* Accent blue */
-    --secondary-color-light: #6c757d; /* Grey text */
+    /* Light Theme Colors - Violet Red Radiant */
+    --background-color-light: #fdf6f0; /* Soft off-white */
+    --text-color-light: #3a2d40; /* Deep violet-grey */
+    --primary-color-light: #8a2be2; /* Vibrant Violet */
+    --secondary-color-light: #6a5acd; /* Medium purple */
     --card-background-light: #ffffff;
-    --border-color-light: #e0e0e0;
-    --shadow-color-light: rgba(0, 0, 0, 0.1);
-    --hover-color-light: #0056b3;
+    --border-color-light: #e6e0e9;
+    --shadow-color-light: rgba(0, 0, 0, 0.15);
+    --hover-color-light: #6a0dad; /* Darker violet for hover */
+    --button-text-light: #ffffff; /* Ensure button text is white */
 
-    /* Dark Theme Colors */
-    --background-color-dark: #20232a;
-    --text-color-dark: #e0e0e0;
-    --primary-color-dark: #61dafb; /* React blue */
-    --secondary-color-dark: #9da3ad;
-    --card-background-dark: #282c34;
-    --border-color-dark: #444;
-    --shadow-color-dark: rgba(0, 0, 0, 0.5);
-    --hover-color-dark: #21a1f1;
+    /* Dark Theme Colors - Violet Red Radiant */
+    --background-color-dark: #1e0a29; /* Very dark violet */
+    --text-color-dark: #f0e6f2; /* Light off-white */
+    --primary-color-dark: #d8bfd8; /* Lighter violet */
+    --secondary-color-dark: #a078b8; /* Muted purple */
+    --card-background-dark: #2c123d; /* Darker purple for cards */
+    --border-color-dark: #4a2c5a;
+    --shadow-color-dark: rgba(0, 0, 0, 0.6);
+    --hover-color-dark: #c080d0; /* Lighter violet for hover */
+    --button-text-dark: #1e0a29; /* Ensure button text is dark in dark mode hover */
 
     /* Current Theme Variables (Default to light) */
     --background-color: var(--background-color-light);
@@ -32,17 +32,18 @@
     --border-color: var(--border-color-light);
     --shadow-color: var(--shadow-color-light);
     --hover-color: var(--hover-color-light);
+    --button-text-color: var(--button-text-light);
 
     /* Other shared variables */
     --transition-speed: 0.4s ease-in-out;
     --border-radius: 8px;
-    --padding-section: 80px 40px;
+    --padding-section: 70px 40px;
     --max-width: 1200px;
 }
 
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    font-family: -apple-system, BlinkMacMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
         sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -51,10 +52,10 @@ body {
     color: var(--text-color);
     transition: background-color var(--transition-speed), color var(--transition-speed);
 
-    /* Animated Gradient Background */
-    background: linear-gradient(45deg, var(--background-color), var(--card-background), var(--background-color));
+    /* Enhanced Animated Gradient Background */
+    background: linear-gradient(135deg, var(--background-color), var(--card-background), var(--background-color));
     background-size: 400% 400%;
-    animation: gradientShift 15s ease infinite;
+    animation: gradientShift 20s ease infinite alternate;
 }
 
 /* Dark Mode Class */
@@ -67,10 +68,11 @@ body.dark-mode {
     --border-color: var(--border-color-dark);
     --shadow-color: var(--shadow-color-dark);
     --hover-color: var(--hover-color-dark);
+    --button-text-color: var(--button-text-dark);
 
-    background: linear-gradient(45deg, var(--background-color-dark), #1a1e24, var(--background-color-dark));
+    background: linear-gradient(135deg, var(--background-color-dark), #12061a, var(--background-color-dark)); /* Darker gradient for dark mode */
     background-size: 400% 400%;
-    animation: gradientShift 15s ease infinite;
+    animation: gradientShift 20s ease infinite alternate;
 }
 
 @keyframes gradientShift {
@@ -101,25 +103,29 @@ a:hover {
 
 button {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--button-text-color); /* Use theme-aware button text color */
     border: none;
     padding: 12px 25px;
     border-radius: var(--border-radius);
     cursor: pointer;
     font-size: 1em;
-    transition: background-color var(--transition-speed), transform 0.2s ease-out;
+    transition: background-color var(--transition-speed), transform 0.2s ease-out, color var(--transition-speed); /* Include color in transition */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 button:hover {
     background-color: var(--hover-color);
     transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+    /* The color is now handled by specific button classes in Hero.css for better control */
 }
 
 section {
     padding: var(--padding-section);
     max-width: var(--max-width);
     margin: 0 auto;
-    /* Framer Motion will handle entry animations, so no need for CSS `animation` here */
+    position: relative;
+    z-index: 1;
 }
 
 .card {
