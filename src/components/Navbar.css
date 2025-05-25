@@ -58,6 +58,18 @@
     background-color: var(--text-color);
     transition: all 0.3s ease-in-out;
 }
+.navbar-logo img {
+  height: 50px;         /* Adjust as needed */
+  width: auto;          /* Keeps aspect ratio */
+  object-fit: contain;  /* Ensures no distortion */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  border-radius: 8px;   /* Optional: rounded corners */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.navbar-logo img:hover {
+  transform: scale(1.05); /* Subtle zoom on hover */
+}
 
 /* Responsive Navbar */
 @media (max-width: 768px) {

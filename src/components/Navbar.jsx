@@ -13,7 +13,7 @@ const Navbar = () => {
     return (
         <header className="navbar">
             <nav className="navbar-container">
-                <Link to="/" className="navbar-logo" onClick={() => setMenuOpen(false)}>Ajinkya Bapat</Link>
+                <Link to="/" className="navbar-logo" onClick={() => setMenuOpen(false)}>  <img src="/images/logo.jpg" alt="Logo" /></Link>
                 <div className={`navbar-links ${menuOpen ? 'active' : ''}`}>
                     <Link to="/#about" onClick={() => setMenuOpen(false)}>About</Link>
                     <Link to="/#skills" onClick={() => setMenuOpen(false)}>Skills</Link>
