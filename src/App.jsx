@@ -19,6 +19,7 @@ import Portfolio from "./components/Portfolio";
 import Awards from "./components/Awards";
 import "./index.css";
 import ParticlesBackground from "./components/ParticlesBackground";
+import Contact from "./components/Contact";
 function App() {
   const [count, setCount] = useState(0);
   const ScrollToHashElement = () => {
@@ -61,7 +62,7 @@ function App() {
                     <Portfolio />
                     <Resume />
                     <Awards />
-
+                    <Contact />
                     {/* <Portfolio />
                                 <Awards />
                                 <Resume />
