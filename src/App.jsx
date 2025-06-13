@@ -53,7 +53,7 @@ function App() {
 
             <Routes>
               <Route
-                path="/"
+                path="/timepass-showoff/"
                 element={
                   <>
                     <Hero />
