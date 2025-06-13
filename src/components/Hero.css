@@ -64,7 +64,8 @@
 .primary-btn:hover {
     background-color: var(--hover-color);
     border-color: var(--hover-color);
-    transform: translateY(-3px); /* Ensure text is white on hover in light mode */
+    transform: translateY(-3px); 
+     color: white; 
 }
 
 .dark-mode .primary-btn:hover {
