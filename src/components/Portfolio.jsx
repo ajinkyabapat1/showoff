@@ -10,7 +10,7 @@ const projects = [
         timeframe: "May 2024 – Present",
         description: "Built an end-to-end academic automation platform for Maharashtra’s medical university. Supported admissions, seat allotments, exams, and PhD workflows. Scaled to statewide usage with real-time dashboards, role-based workflows, and institutional analytics.",
         technologies: ["React", "Redux", "REST APIs", "PostgreSQL", "Agile", "Accessibility"],
-        link: "https://automation.muhs.ac.in/"
+        link: ""
     },
     {
         id: 2,
