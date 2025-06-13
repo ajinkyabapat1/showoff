@@ -70,9 +70,9 @@ const Portfolio = () => {
             id="portfolio"
             className="section"
             variants={sectionVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
+            // initial="hidden"
+            // whileInView="visible"
+            // viewport={{ once: true, amount: 0.3 }}
         >
             <h2>My Portfolio & Experience Timeline</h2>
             <p className="portfolio-intro">
@@ -85,10 +85,10 @@ const Portfolio = () => {
                         key={project.id}
                         variants={projectCardVariants}
                         custom={index}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, amount: 0.2 }}
-                        transition={{ delay: index * 0.1 }}
+                        // initial="hidden"
+                        // whileInView="visible"
+                        // viewport={{ once: true, amount: 0.2 }}
+                        // transition={{ delay: index * 0.1 }}
                     >
                         <div className="project-header">
                             <h3>{project.title}</h3>
