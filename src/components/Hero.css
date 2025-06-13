@@ -57,15 +57,14 @@
 
 .primary-btn {
     background-color: var(--primary-color);
-    color: white; /* Default text color for primary button */
+    color: var(--background-color-dark);
     border: 2px solid var(--primary-color);
 }
 
 .primary-btn:hover {
     background-color: var(--hover-color);
     border-color: var(--hover-color);
-    transform: translateY(-3px);
-    color: white; /* Ensure text is white on hover in light mode */
+    transform: translateY(-3px); /* Ensure text is white on hover in light mode */
 }
 
 .dark-mode .primary-btn:hover {
@@ -77,7 +76,18 @@
     color: var(--primary-color);
     border: 2px solid var(--primary-color);
 }
+.tech-tag {
+    background-color: var(--border-color) !important;
+    color: var(--text-color) !important;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 0.85em;
+}
 
+.dark-mode .tech-tag {
+    background-color: var(--primary-color-dark) !important;
+    color: var(--background-color-dark) !important;
+}
 .secondary-btn:hover {
     background-color: var(--primary-color); /* Secondary button fills with primary color on hover */
     color: white; /* Ensure text is white on hover in light mode */

@@ -33,10 +33,10 @@ const Resume = () => {
                     you can download my full professional resume for more detailed information on my work history,
                     education, and specific achievements.
                 </p>
-                <a href={resumePdfPath} target="_blank" rel="noopener noreferrer" className="btn primary-btn download-resume-btn">
+                <a href={resumePdfPath} target="_blank" rel="noopener noreferrer" className="btn primary-btn download-resume-bt tech-tag ">
                     Download Full Resume (PDF)
                 </a>
-                <p className="resume-note">
+                <p className="resume-note mt-2">
                     *This resume is designed to complement my portfolio, providing a traditional overview of my career.*
                 </p>
             </motion.div>
