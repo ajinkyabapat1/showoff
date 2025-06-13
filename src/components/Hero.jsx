@@ -86,7 +86,7 @@ const Hero = () => {
       <motion.div className="hero-image-container" variants={imageVariants}>
         {/* Replace with your actual profile picture */}
         <img
-          src="/src/assets/ajinkya.jpg"
+          src="/showoff/src/assets/ajinkya.jpg"
           alt="Ajinkya Bapat"
           className="hero-image"
         />

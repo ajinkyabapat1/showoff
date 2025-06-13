@@ -5,7 +5,7 @@ import './Resume.css'; // Resume-specific styling
 
 const Resume = () => {
     // You should place your PDF resume in the `public` folder
-    const resumePdfPath = '/Resume-Ajinkya Bapat.pdf'; // e.g., /assets/your_name_resume.pdf
+    const resumePdfPath = '/showoff/Resume-Ajinkya Bapat.pdf'; // e.g., /assets/your_name_resume.pdf
 
     const sectionVariants = {
         hidden: { opacity: 0, y: 50 },

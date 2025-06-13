@@ -13,14 +13,14 @@ const Navbar = () => {
     return (
         <header className="navbar">
             <nav className="navbar-container">
-                <Link to="/" className="navbar-logo" onClick={() => setMenuOpen(false)}>  <img src="/images/logo.jpg" alt="Logo" /></Link>
+                <Link to="/showoff" className="navbar-logo" onClick={() => setMenuOpen(false)}>  <img src="/showoff/images/logo.jpg" alt="Logo" /></Link>
                 <div className={`navbar-links ${menuOpen ? 'active' : ''}`}>
-                    <Link to="/#about" onClick={() => setMenuOpen(false)}>About</Link>
-                    <Link to="/#skills" onClick={() => setMenuOpen(false)}>Skills</Link>
-                    <Link to="/#portfolio" onClick={() => setMenuOpen(false)}>Portfolio</Link>
-                    <Link to="/#awards" onClick={() => setMenuOpen(false)}>Awards</Link>
-                    <Link to="/#resume" onClick={() => setMenuOpen(false)}>Resume</Link>
-                    <Link to="/#contact" onClick={() => setMenuOpen(false)}>Contact</Link>
+                    <Link to="/showoff/#about" onClick={() => setMenuOpen(false)}>About</Link>
+                    <Link to="/showoff/#skills" onClick={() => setMenuOpen(false)}>Skills</Link>
+                    <Link to="/showoff/#portfolio" onClick={() => setMenuOpen(false)}>Portfolio</Link>
+                    <Link to="/showoff/#awards" onClick={() => setMenuOpen(false)}>Awards</Link>
+                    <Link to="/showoff/#resume" onClick={() => setMenuOpen(false)}>Resume</Link>
+                    <Link to="/showoff/#contact" onClick={() => setMenuOpen(false)}>Contact</Link>
                     <ThemeSwitcher />
                 </div>
                 <div className="menu-icon" onClick={toggleMenu}>

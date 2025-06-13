@@ -10,7 +10,7 @@ const awards = [
     date: "Oct 2024",
     description:
       "Awarded for exceptional client delivery and contribution on high-impact technology transformation projects.",
-    logo:"/images/ey_logo.png",// Replace with actual path if available
+    logo:"/showoff/images/ey_logo.png",// Replace with actual path if available
   },
   {
     title: "GitHub Arctic Vault Contributor",
@@ -18,7 +18,7 @@ const awards = [
     date: "Apr 2021",
     description:
       "Recognized as a contributor to open-source software archived in the GitHub Arctic Code Vault—a historic snapshot of code for future generations.",
-    logo:"/images/github_logo.png",
+    logo:"/showoff/images/github_logo.png",
   },
   {
     title: "Conduent Honor Roll (Individual Award)",
@@ -26,7 +26,7 @@ const awards = [
     date: "Aug 2019",
     description:
       "Received for top performance and contributions to mission-critical enterprise software projects.",
-     logo:"/images/conduent_logo.png"
+     logo:"/showoff/images/conduent_logo.png"
   },
 ];
 
