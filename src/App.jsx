@@ -53,7 +53,7 @@ function App() {
 
             <Routes>
               <Route
-                path="/showoff"
+                path="/"
                 element={
                   <>
                     <Hero />
