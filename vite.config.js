@@ -6,5 +6,5 @@ export default defineConfig({
   plugins: [react(),
      tailwindcss(),
   ],
-  base:"/showoff/"
+  base:"/showoff"
 })

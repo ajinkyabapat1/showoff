@@ -45,7 +45,7 @@ function App() {
     <>
       <ThemeProvider>
         <ParticlesBackground />
-        <Router>
+       
           <ScrollToHashElement />
           <Navbar />
           <main>
@@ -53,7 +53,7 @@ function App() {
 
             <Routes>
               <Route
-                path="/showoff"
+               path="/"
                 element={
                   <>
                     <Hero />
@@ -82,7 +82,7 @@ function App() {
             </Routes>
           </main>
           <Footer />
-        </Router>
+       
       </ThemeProvider>
     </>
   );
