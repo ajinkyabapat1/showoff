@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./Awards.css";
-import ajinkyaJpg from "../assets/ajinkya.jpg";
 
 const awards = [
   {
