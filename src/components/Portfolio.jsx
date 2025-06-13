@@ -1,42 +1,57 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import './Section.css'; // General section styling
-import './Portfolio.css'; // Portfolio-specific styling
+import './Section.css';
+import './Portfolio.css';
 
 const projects = [
     {
         id: 1,
-        title: "Enterprise Resource Planning (ERP) System Modernization",
-        timeframe: "Jan 2022 - Present", // Added timeframe
-        description: "Led a team to re-architect and develop a legacy ERP system into a scalable microservices-based application using React, Node.js, and Kafka. Improved data processing by 40% and reduced operational costs.",
-        technologies: ["React", "Node.js", "Express", "PostgreSQL", "Kafka", "Docker", "AWS"],
-        link: "https://github.com/your-username/erp-modernization" // Corrected link format
+        title: "MUHS – University Automation Portal",
+        timeframe: "May 2024 – Present",
+        description: "Built an end-to-end academic automation platform for Maharashtra’s medical university. Supported admissions, seat allotments, exams, and PhD workflows. Scaled to statewide usage with real-time dashboards, role-based workflows, and institutional analytics.",
+        technologies: ["React", "Redux", "REST APIs", "PostgreSQL", "Agile", "Accessibility"],
+        link: "https://automation.muhs.ac.in/"
     },
     {
         id: 2,
-        title: "Real-time Analytics Dashboard for IoT Devices",
-        timeframe: "Aug 2020 - Dec 2021", // Added timeframe
-        description: "Designed and implemented a real-time data streaming and visualization dashboard for over 10,000 IoT devices, enabling proactive maintenance and anomaly detection. Utilized Python, Flask, and an Elasticsearch/Kibana stack.",
-        technologies: ["Python", "Flask", "Elasticsearch", "Kibana", "Redis", "MQTT", "AWS Lambda"],
-        link: "https://github.com/your-username/iot-dashboard" // Corrected link format
+        title: "Custodian Reconciliation Platform for Gloabal Investment Bank",
+        timeframe: "Oct 2023 – May 2024",
+        description: "Designed and implemented user-friendly UI modules for large-scale reconciliation workflows. Focused on real-time exception tracking, workflow visualization, and compliance support for institutional clients.",
+        technologies: ["Angular","Node.JS", "Redux", "REST APIs", "Jira", "Agile", "Accessibility"],
+        link: ""
     },
     {
         id: 3,
-        title: "E-commerce Platform with AI-driven Personalization",
-        timeframe: "Mar 2019 - Jul 2020", // Added timeframe
-        description: "Contributed to a high-traffic e-commerce platform, focusing on building a recommendation engine using machine learning algorithms and integrating it with the user-facing React application. Boosted conversion rates by 15%.",
-        technologies: ["React", "Redux", "Django", "TensorFlow", "Kubernetes", "Azure"],
-        link: "https://github.com/your-username/ecommerce-platform" // Corrected link format
+        title: "Capital Markets Platform for Gloabl Fintech Org.",
+        timeframe: "Aug 2021 – Oct 2023",
+        description: "Led the development of scalable front-end modules for global trading workflows, regulatory reporting, and multi-region financial data visualization. Integrated real-time market feeds and collaborated with global teams.",
+        technologies: ["React", "Redux", "Spring Boot", "REST APIs", "Kafka", "Agile"],
+        link: ""
     },
     {
         id: 4,
-        title: "Financial Data Aggregation Service",
-        timeframe: "Oct 2017 - Feb 2019", // Added timeframe
-        description: "Developed a robust backend service for aggregating financial data from various APIs, ensuring data integrity and high availability. Implemented in Java with Spring Boot and utilized a PostgreSQL database.",
-        technologies: ["Java", "Spring Boot", "PostgreSQL", "REST APIs", "Kafka", "Jenkins"],
-        link: "https://github.com/your-username/financial-aggregator" // Corrected link format
+        title: "Clairvoyant Dashboard – Pharma Research",
+        timeframe: "Aug 2020 – Jul 2021",
+        description: "Built interactive dashboards for a pharma Fortune 500 company to visualize global R&D progress. Implemented real-time charts, domain-specific filters, and advanced reporting tools used by medical teams.",
+        technologies: ["Angular", "Node.JS","Redux", "D3.js", "Chart.js", "REST APIs", "Agile"],
+        link: ""
     },
-    // Add more projects
+    {
+        id: 5,
+        title: "LA Metro – Tolling & Traffic Monitoring",
+        timeframe: "Oct 2018 – Aug 2020",
+        description: "Developed responsive dashboards to monitor real-time highway toll transactions. Integrated APIs, optimized rendering, and ensured WCAG compliance to support high data volumes and multi-role usage.",
+        technologies: ["Angular", "JavaScript", "D3.js", "REST APIs", "Agile"],
+        link: ""
+    },
+        {
+        id: 6,
+        title: "GitHub Practice Projects",
+        timeframe: "Ongoing",
+        description: "A curated collection of hands-on projects to explore new technologies and reinforce best practices. Includes a React portfolio site, Redux-powered state manager, and full-stack MERN applications.",
+        technologies: ["React", "Redux", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+        link: "https://github.com/ajinkyabapat1"
+    }
 ];
 
 const Portfolio = () => {
@@ -61,7 +76,7 @@ const Portfolio = () => {
         >
             <h2>My Portfolio & Experience Timeline</h2>
             <p className="portfolio-intro">
-                Here are some of the key projects where I've applied my expertise to deliver significant business value. Each project highlights a specific challenge, my approach, and the resulting impact, presented in a chronological timeline.
+                Here are some of the key projects where I've applied my expertise to deliver significant business value. Each project highlights a specific challenge, my approach, and the resulting impact.
             </p>
             <div className="projects-grid">
                 {projects.map((project, index) => (
@@ -69,12 +84,11 @@ const Portfolio = () => {
                         className="project-card card"
                         key={project.id}
                         variants={projectCardVariants}
-                        // Stagger children for a nice reveal effect
-                        custom={index} // Pass index as custom prop for staggered animation
+                        custom={index}
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.2 }}
-                        transition={{ delay: index * 0.1 }} // Stagger delay based on index
+                        transition={{ delay: index * 0.1 }}
                     >
                         <div className="project-header">
                             <h3>{project.title}</h3>
